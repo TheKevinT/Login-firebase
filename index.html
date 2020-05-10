@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!--Libreria FONTASOME DE BOOSTRAP-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!-- Librerias importar para usar firebase -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+    <div class="contenedor">
+        <h2>
+            Sing in
+        </h2>
+
+        <form id="formulario">
+
+
+            <div class="grupo">
+                <label for="usuario"><i class="fas fa-user"></i></label>
+                <input type="text" id="usuario" placeholder="Email">
+            </div>
+
+
+            <div class="grupo">
+                <label for="clave"><i class="fas fa-lock"></i></label>
+                <input type="password" id="clave" placeholder="Password">
+            </div>
+
+            <div class="grupo">
+                <button type="button" class="btn btn-outline-secondary btn-lg" onclick="registrar()">Login</button>
+            </div>
+
+            <p><a href="#">Forgot your password?</a></p>
+
+        </form>
+    </div>
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
